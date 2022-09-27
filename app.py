@@ -10,7 +10,7 @@ if __name__ == "__main__":
 def home():
 	return render_template('register.html')
 
-@app.route('/register',methods=['POST',"GET"])
+@app.route('/register',methods=["POST"])
 def register():
 	if request.method == 'POST':
 		n = request.form.get('fname')
