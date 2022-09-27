@@ -6,7 +6,6 @@ if __name__ == "__main__":
 	app.run(debug=True)
 
 @app.route('/')
-@app.route('/register')
 def home():
 	return render_template('register.html')
 
